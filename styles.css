@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+}
+
+body {
+    max-width: 3835px;
+}
+
+header {
+    background-color: #dedede;
+}
+
+footer {
+    height: 100px;
+    background-color: #dedede;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Inter", sans-serif;
+    margin: 38px;
+    letter-spacing: 2px;
+}
+
+li {
+    margin-top: 0px;
+}
+
+nav button.burger {
+    display: none;
+    border: none;
+    padding: 0;
+    margin-right: 35px;
+    background-color: transparent;
+    width: 24px;
+    height: 18px;
+    border-block: 2px solid #fff;
+
+    span {
+        display: block;
+        height: 1.61px;
+        background-color: #fff;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+nav.open button.burger {
+    border-block: 0;
+
+    span {
+        display: none;
+    }
+
+    img {
+        display: block;
+        width: 80px;
+        position: absolute;
+        top: 30px;
+        right: 3px;
+    }
+}
+
+.block_hov {
+    background-color: #426B1F;
+    color: #fff;
+    padding: 15px;
+    margin-top: 60px;
+    width: 157px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.store {
+    position: relative;
+    top: 5px;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.block_hov:hover {
+    background-color: #396018;
+    box-shadow: 6px 6px 2px 0 rgba(60, 64, 67, .3);
+}
+
+.header .container {
+    min-height: 112px;
+}
+
+.container {
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    color: #426B1F;
+    font-family: "Edu AU VIC WA NT Pre", sans-serif;
+    font-size: 32px;    
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_for_image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_for_center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex_for_start {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.flex_for_end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.flex_for_end_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.desc {
+    margin-top: 167px;
+    font-family: "Newsreader", serif;
+    font-size: 20px;
+}
+
+.kurcuv {
+    font-style: italic;
+    font-family: "Newsreader", serif;
+    font-size: 50px;
+}
+
+.down-text_desc {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 48px;
+}
+
+.block_our_shop {
+    margin: 0;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+}
+
+.right_img {
+    margin-top: 252px;
+    width: 780px;
+}
+
+.left_img {
+    margin-left: 96px;
+    margin-top: 156px;
+}
+
+.text_about_California {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    margin-top: 21px;
+}
+
+.what_we_believe {
+    font-family: "Inter", sans-serif;
+    font-size: 14;
+    margin-top: 156px;
+    margin-bottom: 10px;
+}
+
+.ul_near_footer {
+    background: #fff5e5; /* #fbfbe8 */
+    padding: 20px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    width: 822px;
+    font-family: "Inter", sans-serif;
+}
+
+.up_li {
+    margin-top: 5px;
+}
+
+.left_part_of_footer {
+    display: flex;
+    margin-top: 20px;
+}
+
+.year {
+    color: #4f7a2a;
+    font-family: "Inter", sans-serif;
+}
+
+.ul_footer {
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1420px) {
+    .name {
+        margin-left: 30px;
+    }
+
+    .flex_for_image {
+        display: block;
+    }
+    
+    .left_img {
+        display: flex;
+        align-items: center;
+        margin-right: 115px;
+        margin-top: 156px;
+    }
+
+    .right_img {
+        display: flex;
+        margin-top: 50px;
+        width: auto;
+        flex-direction: column-reverse;
+    }
+
+    .flex_for_end {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .flex_for_end_text {
+        margin-top: 0px;
+        margin-bottom: 50px;
+        display: flex;
+        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav button.burger {
+        display: block;
+    }
+
+    .up_li {
+        width: 785px;
+        color: #575757;
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .with_out_burger {
+        display: none;
+    }
+
+    nav.open .with_out_burger {
+        display: flex;
+        position: absolute;
+        background-color: #f1f1f1;
+        right: 0;
+        margin-right: 45px;
+        margin-top: 55px;
+        flex-direction: column;
+        width: 330px;
+        /* width: 900px; */
+        height: 270px;
+        border-radius: 25px 0 30px 45px;
+        
+        li:last-child {
+            margin-bottom: 35px;
+        }
+
+        li:first-child {
+            margin-top: 35px;
+        }
+
+        .block_hov {
+            background-color: #55842c;
+        }
+    }
+
+    .with_out_burger::after {
+        content: "";
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateY(-100%);
+        border: 13px solid #f1f1f1;
+        box-sizing: border-box;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: #f1f1f1;
+        border-bottom-color: #f1f1f1;
+    }
+}
